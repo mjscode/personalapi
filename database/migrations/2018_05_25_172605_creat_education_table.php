@@ -23,10 +23,6 @@ class CreatEducationTable extends Migration
             $table->string('accomplishments');
             $table->timestamps();
         });
-        Schema::table('expeirnce', function (Blueprint $table) {
-            $table->renameColumn('start-date', 'start');
-            $table->renameColumn('end-date', 'start');
-        });
     }
 
     /**
