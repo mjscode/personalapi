@@ -17,8 +17,8 @@ class CreatEducationTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('company');
-            $table->date('start-date');
-            $table->date('end-date');
+            $table->date('start');
+            $table->date('end');
             $table->string('roles');
             $table->string('accomplishments');
             $table->timestamps();

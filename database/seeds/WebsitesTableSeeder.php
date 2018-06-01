@@ -12,6 +12,12 @@ class WebsitesTableSeeder extends Seeder
     public function run()
     {
         DB::table('websites')->insert([
+            'url' => 'http:mylevitz.com',
+            'summary'=>'Myls Portfolio',
+            'description'=>'A website showcasing my portfolio.',
+            'skills'=>'["Bootstrap 4", "PHP", "JavaScript", "JQuery", "AJAX"]'
+        ]);
+        DB::table('websites')->insert([
             'url' => 'https://mylsretail.mylevitz.com',
             'summary'=>'Sample Retail Site',
             'description'=>'A sample website for a retail store. Uses complex code to provide a powerful user experience.
